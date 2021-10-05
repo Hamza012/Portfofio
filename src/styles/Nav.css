@@ -1,0 +1,45 @@
+.main-nav {
+    width: 100%;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    background-color: brown;
+}
+
+.nav-logo{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-links{
+    grid-column: 3/4;
+}
+ .nav-links ul{
+     height: 3rem;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .nav-links ul li a {
+     text-transform: capitalize;
+     transition: 0.5s;
+ }
+
+ .social-media{
+     grid-column: 4/5;
+ }
+
+ .social-media ul{
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 3fr repeat(3,1fr);
+    align-items: center;
+ }
+ .social-media ul li:first-child{
+     grid-column: 2/3;
+ }
+ .social-media ul li{
+     text-align: right;
+ }
